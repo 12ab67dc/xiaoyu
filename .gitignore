@@ -12,3 +12,8 @@ p.sh
 tmp
 test.py
 /abupy/RomDataBu/df_kl.h5
+/quant_app/data/
+/output/
+/.vs/
+/.playwright-cli/
+/*.egg-info/

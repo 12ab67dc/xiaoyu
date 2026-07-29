@@ -1,0 +1,27 @@
+[project]
+name = "a-share-decision-desk"
+version = "0.1.0"
+description = "Daily A-share decision support dashboard built alongside the legacy ABU research code."
+requires-python = ">=3.11"
+dependencies = [
+    "apscheduler>=3.11,<4",
+    "fastapi>=0.116,<1",
+    "httpx>=0.28,<1",
+    "jinja2>=3.1,<4",
+    "uvicorn[standard]>=0.35,<1",
+]
+
+[project.scripts]
+a-share-desk = "quant_app.app:run"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.4,<9",
+]
+
+[tool.setuptools.packages.find]
+include = ["quant_app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
