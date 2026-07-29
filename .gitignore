@@ -1,0 +1,14 @@
+.ipynb_checkpoints*
+.idea
+.DS_Store
+.venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+logging.log
+p.sh
+*.pyc
+tmp
+test.py
+/abupy/RomDataBu/df_kl.h5
